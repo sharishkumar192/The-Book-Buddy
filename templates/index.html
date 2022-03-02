@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Book Buddy</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index-contents.css') }}">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+  </head>
+
+  <body>
+
+    <!-- Navigaton bar -->
+    <header id="topnav">
+      <div class="inner">
+        <div class="logo">The Book Buddy</div>
+          <nav role='navigation'>
+            <ul>
+              <li><a href="{{ url_for('index') }}">Home</a></li>
+              <li><a href="#textbook">Textbooks</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <!-- Banner Area -->
+    <div class="pimg1" style = "background-image: url('static/img/bg2.jpg'); min-height: 80%">
+      <div class="ptext1">
+      The Book Buddy
+      <p>A rich catalogue of school textbooks <br>for CBSE & TN State Board</p>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="section section-light">		
+      <h2>About</h2>
+      <p>
+        Looking for some school text-books? You're at right place!!! There are plenty of books to satisfy your craving towards learning.... <br>
+"The Book Buddy" is a collaborative and competent website for students pursuing their high school (8th – 12th). Due to this pandemic situation students were unable to get proper and efficient materials  , so we provide them efficient materials and we also guide them with a virtual assistant for the ease of access.<br>
+Browse through our catalogue and find your (book) buddy!
+
+      </p>
+    </section>
+
+    <!-- Syllabus Section -->
+    <a name="textbook"></a>
+    <div id="timeline" name="timeline" ...></div>
+    <div class="pimg2" style = "background-image: url('static/img/bg3.jpeg'); min-height: 80%">
+      <div class="ptext2">
+      <span class="border trans">Choose Your Syllabus</span>
+      <br><br><br><br><br>
+      <button class="button"><a href="{{ url_for('cbsetextbook') }}" style="color: white; text-decoration: none">CBSE</a></button>
+      <button class="button"><a href="{{ url_for('stateboardtextbook') }}" style="color: white; text-decoration: none">TN StateBoard</a></button>
+      </div>
+    </div>
+
+    <!-- News section -->
+    <a name="news"></a>
+    <section class="section section-light">		
+      <h2>Latest Educational News</h2>
+      <p>
+        <a href="https://timesofindia.indiatimes.com/city/chennai/covid-19-no-plan-for-reopening-schools-anytime-soon-tamil-nadu-education-minister-says/articleshow/77952092.cms">
+        <img src='static/img/news1.png'>
+      </a>
+      <a href="https://www.timesnownews.com/education/blog/neet-jee-2020-exam-postponement-review-petition-in-sc-today-live-updates-and-neet-exam-date-latest-news/349">
+        <img src='static/img/news2.png'>
+      </a>
+      </p>
+    </section>
+
+    <!--Foooter  -->
+    <a name="contactus"></a>
+    <section class="section section-dark">		
+      <h3 style="font-size: 30px;">Want to add some materials? Contact Us</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+
+    <style>
+       /* /////////Contact form ///////////////// */
+ * {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: black;
+  text-align: left;
+}
+
+span {
+  font-size: 30px;
+}
+  
+    </style>
+  </body>
+
+</html>

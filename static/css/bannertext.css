@@ -1,0 +1,17 @@
+body {
+    background: #150f21;
+}
+
+
+#bannertext {
+    width: 100%;
+    margin: auto;
+    color: #FFDD1B;
+  font-family: Pacifico;
+  padding-top: 60px;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  word-spacing: 1rem;
+
+  }

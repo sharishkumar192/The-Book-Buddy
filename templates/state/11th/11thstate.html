@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Book Buddy</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bannertext.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cards.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/backtotopbutton.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigaton bar -->
+    <header id="topnav">
+      <div class="inner">
+        <div class="logo">The Book Buddy</div>
+          <nav role='navigation'>
+            <ul>
+              <li><a href="{{ url_for('index') }}">Home</a></li>
+              <li><a href="/#textbook">Textbooks</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <div id="bannertext">11th STATEBOARD SUBJECTS</div>
+
+    <div class="column">
+      <a href="{{ url_for('class11state_accountancy') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/state/11th/accountancy.jpg" />
+        <h1>Accountancy</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class11state_botany') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/state/11th/botany.jpg" />
+        <h1>Botany</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class11state_zoology') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/state/11th/zoology.jpg" />
+        <h1>Zoology</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class11state_businessmaths') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/state/11th/businessmaths.jpg" />
+        <h1>Business Maths</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class11state_chemistry') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/state/11th/chemistry.jpg" />
+        <h1>Chemistry</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class11state_commerce') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/state/11th/commerce.jpg" />
+        <h1>Commerce</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class11state_computerscience') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/state/11th/computerscience.jpg" />
+        <h1>Computer Science</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class11state_physics') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/state/11th/physics.jpg" />
+        <h1>Physics</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class11state_tamil') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/state/11th/tamil.jpg" />
+        <h1>Tamil</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class11state_english') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/state/11th/english.jpg" />
+        <h1>English</h1>
+        </div>
+      </a>
+    </div>
+
+    <button id="back-to-top-btn"><i class="arrow up"></i></button>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/backtotopbutton.js') }}"></script>
+
+    </body>
+
+    </html>

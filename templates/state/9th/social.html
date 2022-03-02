@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>The Book Buddy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/subjects.css') }}">
+
+</head>
+<body>
+    <button id = "x"><a href="{{ url_for('ninthstate') }}" style="text-decoration: none">X</a></button>
+    <div class="column">
+      <div class="card">
+        <div class="border"></div>
+        <img src="static/img/state/9th/social.jpg" />
+        <div class="text">
+          <h1>Book Name: Social Science</h1>
+          <h1>Author: TN Government</h1>
+          <h1>About:</h1> 
+          <p>The Class 8 Board exam acts as a stepping stone for a glorious future in a student’s life. Students who are preparing for their upcoming Class 8 board exams must work hard with dedication to score better marks in the exam. So, to help them study effectively, we have provided Social Science  Class 8 notes of all sub-subjects History, Geography, Political Science and Economics. These notes will help students to score well in their Social Science exam. Students can quickly revise the entire TN State board Class 8 Social Science syllabus by going through these notes. Experts prepare these notes according to the latest guidelines and students can read the notes regularly to understand the concepts thoroughly. These TN State board Class 8 notes of Social Science contain important topics so that students can go through it quickly, especially during the time of the exam. The notes are also written in an easy to understand language and will save valuable time as they will get a good idea about the flow of answers and other vital points.</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <a href="https://drive.google.com/file/d/10ONOJZziFP2IXQqnMLNINL7Ws0rZtSd9/view?usp=sharing" class="buttonDownload">Download</a>
+
+    
+<style>
+
+.text h1 {
+  padding: 5px 0;
+  margin: 0 10px;
+  font-size: 30px;
+  
+}
+
+.text p {
+  padding: 5px 0;
+  margin: 0 10px;
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+
+
+/* ////////////// Download Button ////////////// */
+
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 15px 30px;
+  right: 37%;
+  margin-top:70%;
+	background-color: #4CC713;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+    
+</style>
+</body>
+</html>
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Book Buddy</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bannertext.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cards.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/backtotopbutton.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigaton bar -->
+    <header id="topnav">
+      <div class="inner">
+        <div class="logo">The Book Buddy</div>
+          <nav role='navigation'>
+            <ul>
+              <li><a href="{{ url_for('index') }}">Home</a></li>
+              <li><a href="/#textbook">Textbooks</a></li>
+              <li><a href="/#news">News</a></li>
+                <li><a href="/#contactus">Contact Us</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <div id="bannertext">12th CBSE SUBJECTS</div>
+
+    <div class="column">
+      <a href="{{ url_for('class12cbse_biology') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/12th/biology.jpg" />
+        <h1>Biology</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class12cbse_accountancy') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/12th/accountancy.jpg" />
+        <h1>Accountancy</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class12cbse_businessstudies') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/12th/businessstudies.jpg" />
+        <h1>Business Studies</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class12cbse_chemistry') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/12th/chemistry.jpg" />
+        <h1>Chemistry</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class12cbse_economics') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/12th/economics.jpg" />
+        <h1>Statistics</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class12cbse_maths') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/12th/maths.jpg" />
+        <h1>Maths</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class12cbse_physics') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/12th/physics.jpg" />
+        <h1>Physics</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class12cbse_english') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/12th/english.jpg" />
+        <h1>English</h1>
+        </div>
+      </a>
+    </div>
+
+
+    <button id="back-to-top-btn"><i class="arrow up"></i></button>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/backtotopbutton.js') }}"></script>
+
+    </body>
+
+    </html>

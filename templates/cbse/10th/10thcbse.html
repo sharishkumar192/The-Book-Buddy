@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Book Buddy</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bannertext.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cards.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/backtotopbutton.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigaton bar -->
+    <header id="topnav">
+      <div class="inner">
+        <div class="logo">The Book Buddy</div>
+          <nav role='navigation'>
+            <ul>
+              <li><a href="{{ url_for('index') }}">Home</a></li>
+              <li><a href="/#textbook">Textbooks</a></li>
+              <li><a href="/#news">News</a></li>
+                <li><a href="/#contactus">Contact Us</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+
+    <div id="bannertext">10th CBSE SUBJECTS</div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_englishannefrank') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/englishannefrank.jpg" />
+        <h1>English - Diary of a Young Girl by Anne Frank</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_englishfirstflight') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/englishfirstflight.jpg" />
+        <h1>English - First Flight</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_englishfootprints') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/englishfootprints.jpg" />
+        <h1>English - Footprints without feet</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_englishhelenkeller') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/englishhelenkeller.jpg" />
+        <h1>English - The Story of My Life by Helen Keller</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_englishliterature') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/englishliterature.jpg" />
+        <h1>English - Literature Reader</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_englishmaincourse') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/englishmaincourse.jpg" />
+        <h1>English - Main Course Book</h1>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_science') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/science.jpg" />
+        <h1>Science</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_maths') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/maths.jpg" />
+        <h1>Mathematics</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_economics') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/economics.jpg" />
+        <h1>Economics</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_politicalscience') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/civics.jpg" />
+        <h1>Political Science</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_geography') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/geography.jpg" />
+        <h1>Geography</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="{{ url_for('class10cbse_history') }}" style="text-decoration: none;">
+        <div class="card">
+          <div class="border"></div>
+          <img src="static/img/cbse/10th/history.jpg" />
+        <h1>History</h1>
+        </div>
+      </a>
+    </div>
+
+    <button id="back-to-top-btn"><i class="arrow up"></i></button>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/backtotopbutton.js') }}"></script>
+
+    </body>
+
+    </html>

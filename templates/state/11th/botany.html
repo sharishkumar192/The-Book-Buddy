@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>The Book Buddy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/subjects.css') }}">
+
+</head>
+<body>
+    <button id = "x"><a href="{{ url_for('eleventhstate') }}" style="text-decoration: none">X</a></button>
+    <div class="column">
+      <div class="card">
+        <div class="border"></div>
+        <img src="static/img/state/11th/botany.jpg" />
+        <div class="text">
+          <h1>Book Name: BIOLOGY BOTANY </h1>
+          <h1>Author: SURA PUBLICATION </h1>
+          <h1>About:</h1> 
+          <p>Botany includes the scientific study of plants which are in turn used in many aspects of human life. Class 11 Botany textbook of Tamilnadu board has each of the topics covered so that students have a clear idea of the questions that might be asked in the exam. The Class 11 Botany textbook is approved and sanctioned by Tamilnadu State Board which covers the entire syllabus along with the practicals and assignments.
+            Class 11 Botany textbooks help students to understand the broad concepts in an easy way. The textbook will also provide information about the weightage of marks in each section and also time frame to be spent on each section. It will help students to get a brief idea on which topic to invest more time. The textbook arrange all the topic in a detailed manner following the Tamilnadu Board Class 11 Botany syllabus from the easier to the tough topics so that students don’t get confused with the concepts.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <a href="https://drive.google.com/file/d/16xGp64V578FkQvLOGCPwn0F1NyIh2isJ/view?usp=sharing" class="buttonDownload">Download</a>
+
+    
+<style>
+
+.text h1 {
+  padding: 5px 0;
+  margin: 0 10px;
+  font-size: 30px;
+  
+}
+
+.text p {
+  padding: 5px 0;
+  margin: 0 10px;
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+
+
+/* ////////////// Download Button ////////////// */
+
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 15px 30px;
+  right: 37%;
+  margin-top:70%;
+	background-color: #4CC713;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+    
+</style>
+</body>
+</html>
+

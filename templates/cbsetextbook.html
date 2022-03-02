@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Book Buddy</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/drivingstyle.css') }}"> -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cbsetextbookstyle.css') }}">
+</head>
+
+<body>
+<!-- Navigation bar -->
+<header id="topnav">
+    <div class="inner">
+        <div class="logo">The Book Buddy</div>
+        <nav role='navigation'>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="/#textbook">Textbooks</a></li>
+                <li><a href="/#news">News</a></li>
+                <li><a href="/#contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="wrapper">
+</div>
+<div class="standards-heading">
+    Choose Your Standard
+</div>
+
+<main class="page-content">
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Eighth</h2>
+        <p class="copy">You can find eight standard CBSE textbooks here </p>
+        <button class="btn"><a href="{{ url_for('eighthcbse') }}" style="color: white; text-decoration: none">View Books</a></button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Ninth</h2>
+        <p class="copy">You can find ninth standard CBSE textbooks here </p>
+        <button class="btn"><a href="{{ url_for('ninthcbse') }}" style="color: white; text-decoration: none">View Books</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Tenth</h2>
+        <p class="copy">You can find tenth standard CBSE textbooks here </p>
+        <button class="btn"><a href="{{ url_for('tenthcbse') }}" style="color: white; text-decoration: none">View Books</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Eleventh</h2>
+        <p class="copy">You can find eleventh standard CBSE textbooks here </p>
+        <button class="btn"><a href="{{ url_for('eleventhcbse') }}" style="color: white; text-decoration: none">View Books</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Twelfth</h2>
+        <p class="copy">You can find twelfth standard CBSE textbooks here </p>
+        <button class="btn"><a href="{{ url_for('twelfthcbse') }}" style="color: white; text-decoration: none">View Books</a></button>
+      </div>
+    </div>
+    
+  </main>
+  <br><br>
+
+<style>
+    .wrapper {
+        background-image: url('static/img/img1.jpeg');
+    }
+    .card:nth-child(1):before {
+        background-image: url('static/img/8th.jpg');
+    }
+    .card:nth-child(2):before {
+        background-image: url('static/img/9th.jpg');
+    }
+    .card:nth-child(3):before {
+        background-image: url('static/img/10th.jpg');
+    }
+    .card:nth-child(4):before {
+        background-image: url('static/img/11th.jpg');
+    }
+    .card:nth-child(5):before {
+        background-image: url('static/img/12th.jpg');
+    }
+</style>
+</body>
+</html>

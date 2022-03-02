@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>The Book Buddy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/subjects.css') }}">
+
+</head>
+<body>
+    <button id = "x"><a href="{{ url_for('tenthcbse') }}" style="text-decoration: none">X</a></button>
+    <div class="column">
+      <div class="card">
+        <div class="border"></div>
+        <img src="static/img/cbse/10th/englishfootprints.jpg" />
+        <div class="text">
+          <h1>Book Name: Footprints without feet</h1>
+          <h1>Author: NCERT</h1>
+          <h1>About:</h1> 
+          <p>Footprints without Feet is a supplementary reader in English for Class 10 Language and Literature Course. This book aims at developing the reading skills of students. At the end of each chapter, there are various questions categorised into Think about it and Talk about it.English Footprints Without Feet is a critical skill that inculcates logical reasoning and out-of-the-box analytical abilities. Studying English Footprints Without Feet will enable you to get much better at abstract reasoning. By going through the NCERT Books Class 10 English Footprints Without Feet PDF and working your way through every question, you will be basically setting yourself up for success in Class 10 board exams, at least where English Footprints Without Feet is involved.The NCERT English Footprints Without Feet Book Class 10 guides are written by Self Study experts who have poured their years of expertise in explaining important concepts in an easy manner after carefully analysing previous year exam patterns and CBSE question papers. If you ever thought English Footprints Without Feet was difficult, you will find your perspective changing once you understand the concepts distilled in these Books PDF guides. If you are also preparing for any competitive examinations, these Books will come in handy for their preparation as well since the NCERT book materials are used in various engineering entrance exams and nationwide competitive examinations.</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <a href="https://drive.google.com/drive/folders/1XG97TGB1cMKGyU4yMfc7c7WQxbnnGAot?usp=sharing" class="buttonDownload">Download</a>
+
+    
+<style>
+
+.text h1 {
+  padding: 5px 0;
+  margin: 0 10px;
+  font-size: 30px;
+  
+}
+
+.text p {
+  padding: 5px 0;
+  margin: 0 10px;
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+
+
+/* ////////////// Download Button ////////////// */
+
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 15px 30px;
+  right: 37%;
+  margin-top:87%;
+	background-color: #4CC713;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+    
+</style>
+</body>
+</html>
+

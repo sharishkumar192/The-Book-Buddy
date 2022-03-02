@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>The Book Buddy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/subjects.css') }}">
+
+</head>
+<body>
+    <button id = "x"><a href="{{ url_for('twelfthcbse') }}" style="text-decoration: none">X</a></button>
+    <div class="column">
+      <div class="card">
+        <div class="border"></div>
+        <img src="static/img/cbse/12th/chemistry.jpg" />
+        <div class="text">
+          <h1>Book Name: CHEMISTRY PART 1 & PART 2</h1>
+          <h1>Author: NCERT</h1>
+          <h1>About:</h1> 
+          <p>NCERT Books for Class 12 Chemistry are the most crucial study materials to refer for various competitive exams, such as IIT JEE Chemistry preparation. Every year around 20 to 25 percent of questions asked in JEE Mains Chemistry section are taken directly from the NCERT Chemistry Class 12 textbook. The students are suggested to spend significant time with the theoretical as well as practical explanation of each and every concept mentioned in this book.
+			The textbook has the compilation of chapters written by the best authors in the field of chemistry that gives a good insight into the workings of basic principles of chemistry. NCERT Chemistry Class 12 textbooks Part I and Part II cover all the necessary areas to equip students with the knowledge to appear not only for their Class 12 board examinations but also for several other competitive examinations like JEE Mains, BITSAT, VITEEE, etc. If you have read each and every line carefully and practised every problem thoroughly, you will be able to answer all the 1-mark, 2-mark and other complicated questions easily and score good marks during exams.
+			</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <a href="https://drive.google.com/drive/folders/10ZficnrZQ_RX9FvwBpcedKyKR5GQoSUV?usp=sharing" class="buttonDownload">Download</a>
+
+    
+<style>
+
+.text h1 {
+  padding: 5px 0;
+  margin: 0 10px;
+  font-size: 30px;
+  
+}
+
+.text p {
+  padding: 5px 0;
+  margin: 0 10px;
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+
+
+/* ////////////// Download Button ////////////// */
+
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 15px 30px;
+  right: 37%;
+  margin-top:48%;
+	background-color: #4CC713;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+    
+</style>
+</body>
+</html>
+
