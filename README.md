@@ -13,4 +13,4 @@ You're all set! Head to localhost:5000 or enter http://127.0.0.1:5000/ on your b
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-"The Book Buddy" is a collaborative and competent website for students pursuing their higher and secondary school. Due to this pandemic situation students were unable to get proper and efficient materials  , so we provide them efficient materials and we also guide them with a virtual assistant for the ease of access.
+"The Book Buddy" is a collaborative and competent website for students pursuing their higher and senior secondary school. Due to this pandemic situation students were unable to get proper and efficient materials  , so we provide them efficient materials and we also guide them with a virtual assistant for the ease of access.
